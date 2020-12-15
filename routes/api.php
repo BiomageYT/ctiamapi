@@ -19,3 +19,9 @@ Route::apiResource('tiendas', 'TiendaController');
 Route::prefix('tiendas')->group(function () {
     Route::get('/', 'TiendaController@index');
 });
+
+Route::apiResource('productos', 'ProductoController');
+
+Route::prefix('productos')->group(function () {
+    Route::get('/', 'ProductoController@index');
+});
