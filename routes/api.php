@@ -25,3 +25,9 @@ Route::apiResource('productos', 'ProductoController');
 Route::prefix('productos')->group(function () {
     Route::get('/', 'ProductoController@index');
 });
+
+Route::apiResource('usuarios', 'UsuarioController');
+
+Route::prefix('usuarios')->group(function () {
+    Route::get('/', 'UsuarioController@index');
+});
